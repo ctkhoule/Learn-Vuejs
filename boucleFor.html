@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <!-- Author : @ctkhoule -->
+        <title>Boucle For</title>
+    </head>
+    <body>
+        <div id="app-4">
+           <ol>
+               <li v-for="todo in todos">
+                    {{ todo.text }}
+               </li>
+           </ol>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script>
+            var app4 = new Vue({
+                el:'#app-4',
+                data: {
+                    todos: [
+                        { text: 'Apprendre Vuejs' },
+                        { text: 'Apprendre Git' },
+                        { text: 'Apprendre Java' }
+                    ]
+                }
+            })
+        </script>
+    </body>
+</html>
